@@ -35,5 +35,14 @@ services:
     env_file:
       - .env
 
+  stress_predictor:
+    build:
+      context: ../stress_predictor
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    env_file:
+      - .env
+
 volumes:
   influxdb-data:
