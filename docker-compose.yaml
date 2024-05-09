@@ -17,19 +17,21 @@ services:
 
   api:
     build:
-      context: .
-      dockerfile: .\api\Dockerfile
+      context: ../api
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     depends_on:
       - influxdb
+    env_file:
+      - .env
 
   data_generator:
     build:
-      context: .
-      dockerfile: .\data_generator\Dockerfile
+      context: ../data_generator
+      dockerfile: Dockerfile
     depends_on:
-      - influxdb
+      - api
     env_file:
       - .env
 
