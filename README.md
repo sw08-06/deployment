@@ -1,6 +1,6 @@
 # Deployment
 This repository contains the code for the running the entire system using Docker Compose. The system consists of the following components:
-- **Frontend:** UI 
+- **Frontend:** UI for displaying the stress predictions.
 - **Data Generator:** Generates mock physiological data.
 - **Stress Predictor:** Performs stress predictions on the physiological data.
 - **InfluxDB database:** Stores the mock physiological data and the predictions made by the stress predictor.
