@@ -15,13 +15,15 @@ INFLUX_PASSWORD="PASSWORD"
 INFLUX_BUCKET="BUCKET"
 INFLUX_ORG="ORG"
 INFLUX_TOKEN="TOKEN"
-INFLUX_URL="http://IP_ADDRESS_OF_HOST_MACHINE:8086"
+INFLUX_URL="http://influxdb:8086"
+VITE_API_URL="http://api:3000"
+API_URL="http://api:3000"
 ```
-Ensure to replace `"USERNAME"`, `"PASSWORD"`, `"BUCKET"`, `"ORG"`, `"TOKEN"`, and `"IP_ADDRESS_OF_HOST_MACHINE"` with your actual InfluxDB credentials and server information.
+Ensure to replace `"USERNAME"`, `"PASSWORD"`, `"BUCKET"`, `"ORG"`, and `"TOKEN"` with your actual InfluxDB credentials and server information.
 
 Then, run the following command in the terminal:
 ```
-docker-compose up -d
+docker-compose up
 ```
 
 ## License
