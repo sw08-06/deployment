@@ -16,7 +16,6 @@ INFLUX_BUCKET="BUCKET"
 INFLUX_ORG="ORG"
 INFLUX_TOKEN="TOKEN"
 INFLUX_URL="http://influxdb:8086"
-VITE_API_URL="http://api:3000"
 API_URL="http://api:3000"
 ```
 Ensure to replace `"USERNAME"`, `"PASSWORD"`, `"BUCKET"`, `"ORG"`, and `"TOKEN"` with your actual InfluxDB credentials and server information.
